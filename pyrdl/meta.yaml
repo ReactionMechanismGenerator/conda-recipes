@@ -11,6 +11,9 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - cmake
+  host:
     - python
     - cython
   run:
