@@ -1,10 +1,10 @@
 package:
   name: pyrdl
-  version: "1.1"
+  version: "1.1.2"
 
 source:
   git_url: https://github.com/rareylab/RingDecomposerLib.git
-  git_rev: v1.1
+  git_rev: v1.1.2
 
 build:
   number: 0
