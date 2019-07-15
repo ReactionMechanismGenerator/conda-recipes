@@ -17,15 +17,15 @@ requirements:
     - python
 
 test:
+  files:
+    - test.sh
   source_files:
-    - 'build/*'
-
+    - test
+    - src/python/test/test.py
   imports:
     - py_rdl
-
   commands:
-    - cd build [unix]
-    - make test [unix]
+    - . ./test.sh
 
 about:
   home: https://github.com/rareylab/RingDecomposerLib
