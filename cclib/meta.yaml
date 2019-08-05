@@ -7,16 +7,25 @@
 
 package:
     name: cclib
-    version: '1.5.3'
+    version: '1.6.1.rmg'
 source:
-    git_url: https://github.com/cclib/cclib.git
+    git_url: https://github.com/amarkpayne/cclib.git
 
 requirements:
     build:
-        - python
-    run:
-        - python
+        - python=3
         - numpy
+        - six
+        - scipy
+        - biopython
+        - openbabel
+    run:
+        - python=3
+        - numpy
+        - six
+        - scipy
+        - biopython
+        - openbabel
 test:
     imports:
         - cclib
