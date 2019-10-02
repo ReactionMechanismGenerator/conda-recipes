@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install --no-deps https://files.pythonhosted.org/packages/f8/8a/4cf31928a03b13f30e8b00134565990331087145f6e5248fd1bd7dcc2631/py3Dmol-0.7.2-py2.py3-none-any.whl
+pip install --no-deps https://files.pythonhosted.org/packages/da/87/44984bfc8a3014c1386661be4efeeee7d3fe811b79802695100620cedda6/py3Dmol-0.8.0-py2.py3-none-any.whl
 
 
 # Add more build steps here, if they are necessary.
