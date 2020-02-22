@@ -17,9 +17,8 @@ mkdir -p ${PREFIX}/lib
 mkdir -p ${PREFIX}/include/lpsolve
 
 # build library
-cd lpsolve55
-sed 's/-Wno-long-double//' < ${ccc} > ${ccc}.patched
-sh -x ${ccc}.patched
+cd lp_solve_5.5/lpsolve55
+sh -x ${ccc}
 cd bin/${platarch}
 
 if [[ "$platform" == "macos" ]]; then
@@ -31,8 +30,7 @@ cd ../../../
 
 # build executable
 cd lp_solve
-sed 's/-Wno-long-double//' < ${ccc} > ${ccc}.patched
-sh ${ccc}.patched
+sh ${ccc}
 cp bin/${platarch}/lp_solve ${PREFIX}/bin/
 cd ..
 
