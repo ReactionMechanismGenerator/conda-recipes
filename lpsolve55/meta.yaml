@@ -1,19 +1,12 @@
 package:
     name: lpsolve55
-    version: 5.5
+    version: 5.5.1
 
 source:
-    fn: lp_solve_5.5.2.5_Python_source.tar.gz
-    url: https://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.5/lp_solve_5.5.2.5_Python_source.tar.gz
-    md5: 937f97a6e236e6ddc095485673a7a9ce
-
-    patches:
-        - setup.patch # [unix]
-        - setup_win.patch # [win]
-        - hash_osx.patch # [osx]
+    git_url: https://github.com/amarkpayne/lp_solve_python_3x.git
 
 build:
-    number: 1
+    number: 3
 
 requirements:
     build:

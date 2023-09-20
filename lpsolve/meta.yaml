@@ -7,11 +7,9 @@ package:
     name: lpsolve
     version: 5.5.2.5
 source:
-    fn: lp_solve_5.5.2.5_source.tar.gz
-    md5: 3be57261fc41dd8e210f54017220d5f7
-    url: https://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.5/lp_solve_5.5.2.5_source.tar.gz
+    git_url: https://github.com/amarkpayne/lp_solve_python_3x.git
 build:
-    number: '0'
+    number: 2
 test:
     files:
         - demo.c
