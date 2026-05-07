@@ -1,13 +1,13 @@
 {% set name = "sella" %}
-{% set version = "2.2.1" %}
+{% set version = "2.4.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/Sella-{{ version }}.tar.gz
-  sha256: c6d5718ec6edb7e70850d51896e1bda2c3e7fe3a7017057dd95c7b5d876c17d4
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sella-{{ version }}.tar.gz
+  sha256: ac930b2b8e670d161c3d3202ea43ce5427c94591b17191058f18892c70a7a0a4
 
 build:
   number: 0
@@ -19,13 +19,13 @@ requirements:
     - {{ compiler('c') }}
   host:
     - pip
-    - python {{ python }}
-    - cython
+    - python=3.9
+    - cython<3
     - {{ pin_compatible('numpy') }}
     - scipy >=1.1.10
   run:
     - ase
-    - python {{ python }}
+    - python=3.9
     - jax >=0.2.3
     - jaxlib >=0.1.56
     - scipy >=1.1.10
