@@ -1,5 +1,5 @@
 {% set name = "acat" %}
-{% set version = "1.4.6" %}
+{% set version = "2.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/acat-{{ version }}.tar.gz
-  sha256: dbae28df88402beb8b46577b1b0b7a160835dfe958f91fd17924de7095328a0b
+  sha256: 81cb8ddca4730b330be9f877dc8691d1f3cff40e0763a05cc334f354cffdea87
 
 build:
   noarch: python
@@ -18,10 +18,12 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
   run:
     - ase
     - networkx >=2.4
     - python >=3.6
+    - setuptools
 
 test:
   imports:
